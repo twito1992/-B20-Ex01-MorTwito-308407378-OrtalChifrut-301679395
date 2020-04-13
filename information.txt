@@ -6,4 +6,4 @@ Delivery Date.........:
 Delivered In Delay....: No
 Delay Reason..........: 
 Visual Studio Version.: 2017
-Comments..............: Feature number 4 works only when runnig in debug mode.
+Comments..............: 
