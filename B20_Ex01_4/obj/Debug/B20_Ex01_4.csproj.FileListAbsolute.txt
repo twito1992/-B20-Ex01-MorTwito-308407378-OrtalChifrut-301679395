@@ -5,3 +5,10 @@ C:\Users\מור טואיטו\source\repos\B20 Ex01 MorTwito 308407378 OrtalChifr
 C:\Users\מור טואיטו\source\repos\B20 Ex01 MorTwito 308407378 OrtalChifrut 301679395\B20_Ex01_4\obj\Debug\B20_Ex01_4.csproj.CoreCompileInputs.cache
 C:\Users\מור טואיטו\source\repos\B20 Ex01 MorTwito 308407378 OrtalChifrut 301679395\B20_Ex01_4\obj\Debug\B20_Ex01_4.exe
 C:\Users\מור טואיטו\source\repos\B20 Ex01 MorTwito 308407378 OrtalChifrut 301679395\B20_Ex01_4\obj\Debug\B20_Ex01_4.pdb
+C:\Users\ortal\OneDrive\מסמכים\GitHub\-B20-Ex01-MorTwito-308407378-OrtalChifrut-301679395\B20_Ex01_4\bin\Debug\B20_Ex01_4.exe.config
+C:\Users\ortal\OneDrive\מסמכים\GitHub\-B20-Ex01-MorTwito-308407378-OrtalChifrut-301679395\B20_Ex01_4\bin\Debug\B20_Ex01_4.exe
+C:\Users\ortal\OneDrive\מסמכים\GitHub\-B20-Ex01-MorTwito-308407378-OrtalChifrut-301679395\B20_Ex01_4\bin\Debug\B20_Ex01_4.pdb
+C:\Users\ortal\OneDrive\מסמכים\GitHub\-B20-Ex01-MorTwito-308407378-OrtalChifrut-301679395\B20_Ex01_4\obj\Debug\B20_Ex01_4.csprojResolveAssemblyReference.cache
+C:\Users\ortal\OneDrive\מסמכים\GitHub\-B20-Ex01-MorTwito-308407378-OrtalChifrut-301679395\B20_Ex01_4\obj\Debug\B20_Ex01_4.csproj.CoreCompileInputs.cache
+C:\Users\ortal\OneDrive\מסמכים\GitHub\-B20-Ex01-MorTwito-308407378-OrtalChifrut-301679395\B20_Ex01_4\obj\Debug\B20_Ex01_4.exe
+C:\Users\ortal\OneDrive\מסמכים\GitHub\-B20-Ex01-MorTwito-308407378-OrtalChifrut-301679395\B20_Ex01_4\obj\Debug\B20_Ex01_4.pdb
