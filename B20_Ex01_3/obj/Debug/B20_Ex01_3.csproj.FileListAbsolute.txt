@@ -1,0 +1,7 @@
+C:\Users\מור טואיטו\source\repos\B20 Ex01 MorTwito 308407378 OrtalChifrut 301679395\B20_Ex01_3\obj\Debug\B20_Ex01_3.csprojAssemblyReference.cache
+C:\Users\מור טואיטו\source\repos\B20 Ex01 MorTwito 308407378 OrtalChifrut 301679395\B20_Ex01_3\obj\Debug\B20_Ex01_3.csproj.CoreCompileInputs.cache
+C:\Users\מור טואיטו\source\repos\B20 Ex01 MorTwito 308407378 OrtalChifrut 301679395\B20_Ex01_3\bin\Debug\B20_Ex01_3.exe.config
+C:\Users\מור טואיטו\source\repos\B20 Ex01 MorTwito 308407378 OrtalChifrut 301679395\B20_Ex01_3\bin\Debug\B20_Ex01_3.exe
+C:\Users\מור טואיטו\source\repos\B20 Ex01 MorTwito 308407378 OrtalChifrut 301679395\B20_Ex01_3\bin\Debug\B20_Ex01_3.pdb
+C:\Users\מור טואיטו\source\repos\B20 Ex01 MorTwito 308407378 OrtalChifrut 301679395\B20_Ex01_3\obj\Debug\B20_Ex01_3.exe
+C:\Users\מור טואיטו\source\repos\B20 Ex01 MorTwito 308407378 OrtalChifrut 301679395\B20_Ex01_3\obj\Debug\B20_Ex01_3.pdb

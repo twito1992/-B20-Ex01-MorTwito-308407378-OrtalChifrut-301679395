@@ -3,7 +3,7 @@ using System.Text;
 
 namespace B20_Ex01_4
 {
-    class B20_Ex01_4
+    class Program
     {
         public static void Main()
         {
@@ -39,7 +39,6 @@ namespace B20_Ex01_4
             if (isNumber == true)
             {
                 if(userNumber %5 == 0)
-                //if ((userNumber %10 == 0) || (userNumber %10 ==5))
                 {
                     divBy5 = !divBy5;
                 }

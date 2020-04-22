@@ -2,7 +2,7 @@
 
 namespace B20_Ex01_05
 {
-    public class Program
+    public class B20_Ex01_05
     {
         public static void Main ()
         {
