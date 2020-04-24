@@ -10,8 +10,9 @@ namespace B20_Ex01_01
         public static void Main()
         {
 
-            string msg = bigAndSmallNumber(468, 466, 472);
-            Console.WriteLine(msg);
+            //string msg = bigAndSmallNumber(468, 466, 472);
+            //Console.WriteLine(msg);
+
             //int counter = 0;
             //countOfNumbersInAscendingOrder("111011000", ref counter);
             //countOfNumbersInAscendingOrder("111010010", ref counter);
@@ -38,7 +39,7 @@ namespace B20_Ex01_01
             //string msg = avgOfDigits(countOfzero,countOfOne);
             //Console.WriteLine(msg);
 
-            //binarySeries();
+            binarySeries();
             Console.WriteLine("Please press 'ENTER' to exit...");
             Console.ReadLine();
 
@@ -47,8 +48,8 @@ namespace B20_Ex01_01
         private static string getInputFromUser()
         {
             string binaryNumber = Console.ReadLine();
-
-            while (!(inputBinaryChack(binaryNumber) || !(chackIfNumBase2(binaryNumber))))
+            bool ifBinary = true;
+            while ((inputBinaryChack(binaryNumber) == !ifBinary || (chackIfNumBase2(binaryNumber)==!ifBinary)))
             {
                 Console.WriteLine("Error! wrong input {0}Please try again:", Environment.NewLine);
                 binaryNumber = Console.ReadLine();
@@ -73,7 +74,7 @@ namespace B20_Ex01_01
 
             for (int i = 0; i < i_userInput.Length; i++)
             {
-                if ((i_userInput[i] != '0') || (i_userInput[i] != '1'))
+                if ((i_userInput[i] != '0') && (i_userInput[i] != '1'))
                 {
                     answer = false;
                 }
@@ -188,13 +189,42 @@ The smallest number is : {1} "
             return msg;
         }
 
-        private static void binarySeries()
+        private static string printDecNumber(ref string io_userInput1, ref string io_userInput2, ref string io_userInput3)
         {
+            string msg = string.Format(
 
+@"The {0} in dec Is : {1}
+The {2} in dec Is : {3}
+The {4} in dec Is : {5}",
+            io_userInput1,
+            convertBinNumToDecNum(io_userInput1),
+            io_userInput2,
+            convertBinNumToDecNum(io_userInput2),
+            io_userInput3,
+            convertBinNumToDecNum(io_userInput3)
+            );
+            return msg;
         }
 
+        private static void binarySeries()
+        {
+            Console.WriteLine("Please enter 3 binary numbers with 9 digits each:");
+            string userInput1= getInputFromUser(); ;
+            string userInput2= getInputFromUser(); ;
+            string userInput3= getInputFromUser(); ;
+            string msg = string.Format(
+            @"------------------Binary Series--------------
+{0}",
+            printDecNumber(ref userInput1,ref userInput2,ref userInput3)
 
+            );
+
+            Console.WriteLine(msg);
+        }
     }
+
+
 }
+
 
 
