@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text;
+using B20_Ex01_02;
 
 
 namespace B20_Ex01_03
@@ -50,7 +51,7 @@ namespace B20_Ex01_03
                 string outputString = string.Format("Sand Clock of {0} height:", i_HeightOfHourglassInt);
                 Console.WriteLine(outputString);
                 StringBuilder clockBuilder = new StringBuilder();
-                B20_Ex01_02.Program.CreateHourglass(clockBuilder, i_HeightOfHourglassInt); ///////// ?למה זה לא עובד? 
+                //B20_Ex01_02.Program.CreateHourglass(clockBuilder, i_HeightOfHourglassInt); ///////// ?למה זה לא עובד? 
                 Console.Write(clockBuilder);
             }
         }

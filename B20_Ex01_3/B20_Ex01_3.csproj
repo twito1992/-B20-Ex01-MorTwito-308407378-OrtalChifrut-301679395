@@ -38,10 +38,7 @@
     <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\B20_Ex01_2\B20_Ex01_2.csproj">
-      <Project>{20b2b75b-b8aa-4244-adc2-04f5696a052f}</Project>
-      <Name>B20_Ex01_2</Name>
-    </ProjectReference>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
