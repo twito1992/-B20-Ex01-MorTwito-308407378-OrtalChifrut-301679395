@@ -14,6 +14,7 @@ namespace B20_Ex01_05
         private static int getTheBigestDig(int i_userNumber)
         {
             int bigDig = 0;
+
             while (i_userNumber > 0)
             {
                 if (bigDig < i_userNumber % 10)
@@ -28,6 +29,7 @@ namespace B20_Ex01_05
         private static int getThelowestDig(int i_userNumber)
         {
             int smallestDig = 10;
+
             while (i_userNumber > 0)
             {
                 if (smallestDig > i_userNumber % 10)
@@ -42,6 +44,7 @@ namespace B20_Ex01_05
         private static int getTheCountOfDigDivBy3(int i_userNumber)
         {
             int countDivBy3 = 0;
+
             while (i_userNumber > 0)
             {
                 if (i_userNumber % 10 % 3 == 0)
@@ -56,6 +59,7 @@ namespace B20_Ex01_05
         {
             int countOfDigitUpperThenUnityDigit = 0;
             int unityDigit = i_userNumber % 10;
+
             i_userNumber = i_userNumber / 10;
             while (i_userNumber > 0)
             {
@@ -70,11 +74,14 @@ namespace B20_Ex01_05
         private static bool checkIfValidInputFromUser(string i_userInput)
         {
             bool checkIfItsANumber = false;
+
             if (i_userInput.Length != 9)
             {
                 return checkIfItsANumber;
             }
+
             int userNumber = 0;
+
             checkIfItsANumber = int.TryParse(i_userInput, out userNumber);
             if ((checkIfItsANumber == false) || (userNumber < 0))
             {
@@ -85,6 +92,7 @@ namespace B20_Ex01_05
         private static string getInputFromUser()
         {           
             Console.WriteLine("Plase enter 9-digits positiv number:");
+
             string userInput= Console.ReadLine();
 
             while (checkIfValidInputFromUser(userInput) == false)
