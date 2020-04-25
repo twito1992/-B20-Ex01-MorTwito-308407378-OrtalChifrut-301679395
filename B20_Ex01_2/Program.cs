@@ -25,18 +25,18 @@ namespace B20_Ex01_02
                 Console.Write(hourglassBuilder);
             }
 
-            public static void CreateHourglass(StringBuilder i_ClockBuilder, int i_HeightOfHourglass, int i_SpaceOfLine = 0)
+            public static void CreateHourglass(StringBuilder i_HourglassBuilder, int i_HeightOfHourglass, int i_SpaceOfLine = 0)
             {
                 string lineOfHourglass = NumberToSpaces(i_SpaceOfLine++) + NumberToAestrics(i_HeightOfHourglass);
-                i_ClockBuilder.AppendLine(lineOfHourglass);
+                i_HourglassBuilder.AppendLine(lineOfHourglass);
 
                 if (i_HeightOfHourglass == 1)
                 {
                     return;
                 }
 
-                CreateHourglass(i_ClockBuilder, i_HeightOfHourglass - 2, i_SpaceOfLine);
-                i_ClockBuilder.AppendLine(lineOfHourglass);
+                CreateHourglass(i_HourglassBuilder, i_HeightOfHourglass - 2, i_SpaceOfLine);
+                i_HourglassBuilder.AppendLine(lineOfHourglass);
             }
 
             public static string NumberToSpaces(int i_SpaceOfLine)

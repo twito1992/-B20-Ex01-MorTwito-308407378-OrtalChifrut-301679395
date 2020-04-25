@@ -19,7 +19,7 @@ namespace B20_Ex01_03
             {
                 int heightOfHourglassInt = CheckInput();
                 CheckAndFixEvenNumber(ref heightOfHourglassInt);
-                PrintSandClock(heightOfHourglassInt);
+                PrintHourglass(heightOfHourglassInt);
             }
 
             public static int CheckInput()
@@ -46,13 +46,13 @@ namespace B20_Ex01_03
                 }
             }
 
-            public static void PrintSandClock(int i_HeightOfHourglassInt)
+            public static void PrintHourglass(int i_HeightOfHourglassInt)
             {
-                string outputString = string.Format("Sand Clock of {0} height:", i_HeightOfHourglassInt);
+                string outputString = string.Format("Hourglass of {0} height:", i_HeightOfHourglassInt);
                 Console.WriteLine(outputString);
-                StringBuilder clockBuilder = new StringBuilder();
-                //B20_Ex01_02.Program.CreateHourglass(clockBuilder, i_HeightOfHourglassInt); ///////// ?למה זה לא עובד? 
-                Console.Write(clockBuilder);
+                StringBuilder hourglassBuilder = new StringBuilder();
+                B20_Ex01_02.Program.CreateHourglass(hourglassBuilder, i_HeightOfHourglassInt); ///////// ?למה זה לא עובד? 
+                Console.Write(hourglassBuilder);
             }
         }
 
