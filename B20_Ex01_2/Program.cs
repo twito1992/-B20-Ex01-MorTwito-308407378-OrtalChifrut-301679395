@@ -20,12 +20,12 @@ namespace B20_Ex01_02
                 const int HeightOfHourglass = 5;
 
                 StringBuilder hourglassBuilder = new StringBuilder();
-                CreateSandClock(hourglassBuilder, HeightOfHourglass);
+                CreateHourglass(hourglassBuilder, HeightOfHourglass);
                 Console.WriteLine("Hourglass of 5 height:");
                 Console.Write(hourglassBuilder);
             }
 
-            public static void CreateSandClock(StringBuilder i_ClockBuilder, int i_HeightOfHourglass, int i_SpaceOfLine = 0)
+            public static void CreateHourglass(StringBuilder i_ClockBuilder, int i_HeightOfHourglass, int i_SpaceOfLine = 0)
             {
                 string lineOfHourglass = NumberToSpaces(i_SpaceOfLine++) + NumberToAestrics(i_HeightOfHourglass);
                 i_ClockBuilder.AppendLine(lineOfHourglass);
@@ -35,7 +35,7 @@ namespace B20_Ex01_02
                     return;
                 }
 
-                CreateSandClock(i_ClockBuilder, i_HeightOfHourglass - 2, i_SpaceOfLine);
+                CreateHourglass(i_ClockBuilder, i_HeightOfHourglass - 2, i_SpaceOfLine);
                 i_ClockBuilder.AppendLine(lineOfHourglass);
             }
 
