@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{20B2B75B-B8AA-4244-ADC2-04F5696A052F}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>B20_Ex01_2</RootNamespace>
     <AssemblyName>B20_Ex01_2</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
