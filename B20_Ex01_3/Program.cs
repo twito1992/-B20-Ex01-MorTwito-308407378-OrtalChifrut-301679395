@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Text;
-using B20_Ex01_02;
+using  B20_Ex01_02;
 
 
 namespace B20_Ex01_03
@@ -54,6 +54,7 @@ namespace B20_Ex01_03
                 B20_Ex01_02.Program.CreateHourglass(hourglassBuilder, i_HeightOfHourglassInt); ///////// ?למה זה לא עובד? 
                 Console.Write(hourglassBuilder);
             }
+            
         }
 
 
