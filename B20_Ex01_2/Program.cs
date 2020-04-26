@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Text;
 
+
 namespace B20_Ex01_02
 {
     public class B20_Ex01_02

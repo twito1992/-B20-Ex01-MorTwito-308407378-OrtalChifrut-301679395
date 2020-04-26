@@ -51,7 +51,7 @@ namespace B20_Ex01_03
                 string outputString = string.Format("Hourglass of {0} height:", i_HeightOfHourglassInt);
                 Console.WriteLine(outputString);
                 StringBuilder hourglassBuilder = new StringBuilder();
-                B20_Ex01_02.Program.CreateHourglass(hourglassBuilder, i_HeightOfHourglassInt); ///////// ?למה זה לא עובד? 
+                B20_Ex01_02.B20_Ex01_02.Program.CreateHourglass(hourglassBuilder, i_HeightOfHourglassInt); ///////// ?למה זה לא עובד? 
                 Console.Write(hourglassBuilder);
             }
         }
