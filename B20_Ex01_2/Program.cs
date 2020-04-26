@@ -6,14 +6,16 @@ namespace B20_Ex01_02
 {
     public class B20_Ex01_02
     {
-        public static class Program
+        public class Program
         {
             private const char k_Asterisk = '*';    //?אם זה מתשנה קבוע, צריך לכתוב את זה לפני המשתנה?
-            private const char Space = ' ';
+            private const char k_Space = ' ';
 
             public static void Main()
             {
                 ManageExercise2();
+                Console.WriteLine("Please press 'ENTER' to exit...");
+                Console.ReadLine();
             }
 
             public static void ManageExercise2()
@@ -42,7 +44,7 @@ namespace B20_Ex01_02
 
             public static string NumberToSpaces(int i_SpaceOfLine)
             {
-                return new string(Space, i_SpaceOfLine);
+                return new string(k_Space, i_SpaceOfLine);
             }
 
             public static string NumberToAestrics(int i_HeightOfHourglass)
