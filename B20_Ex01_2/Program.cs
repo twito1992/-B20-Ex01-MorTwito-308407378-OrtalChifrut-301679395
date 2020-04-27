@@ -7,7 +7,7 @@ namespace B20_Ex01_02
     {
         public static class Program
         {
-            private const char k_Asterisk = '*';    //?אם זה מתשנה קבוע, צריך לכתוב את זה לפני המשתנה?
+            private const char asterisk = '*';    //?אם זה מתשנה קבוע, צריך לכתוב את זה לפני המשתנה?
             private const char Space = ' ';
 
             public static void Main()
@@ -46,7 +46,7 @@ namespace B20_Ex01_02
 
             public static string NumberToAestrics(int i_HeightOfHourglass)
             {
-                return new string(k_Asterisk, i_HeightOfHourglass);
+                return new string(asterisk, i_HeightOfHourglass);
             }
         }
     }
