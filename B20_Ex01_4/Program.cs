@@ -28,19 +28,19 @@ namespace B20_Ex01_4
                 }
                 else
                 {
-                    return IsPalindrome(i_Str.Substring(1,i_Str.Length - 2));
+                    return IsPalindrome(i_Str.Substring(1, i_Str.Length - 2));
                 }
             }
         }
         private static bool IsNumDivBy5(string i_UserNumber)
         {
             int userNumber = 0;
-            bool isNumber = int.TryParse(i_UserNumber,out userNumber);
+            bool isNumber = int.TryParse(i_UserNumber, out userNumber);
             bool divBy5 = false;
 
             if (isNumber == true)
             {
-                if(userNumber %5 == 0)
+                if (userNumber % 5 == 0)
                 {
                     divBy5 = !divBy5;
                 }
@@ -68,7 +68,7 @@ namespace B20_Ex01_4
             {
                 answer = false;
             }
-       
+
 
             else
             {
@@ -85,40 +85,21 @@ namespace B20_Ex01_4
 
                         }
                     }
-                    else 
+                    else
                         if (char.IsLetter(i_Str[i]) == isChar)
+                    {
+                        if (char.IsLetter(i_Str[i + 1]) != isChar)
                         {
-                            if (char.IsLetter(i_Str[i + 1]) != isChar)
-                            {
-                                answer = false;
+                            answer = false;
 
-                            }
                         }
+                    }
                     else
                     {
                         answer = false;
                         break;
-                    } 
+                    }
                 }
-
-            //    for (int i = 0; i < i_Str.Length; i++)
-            //    {
-            //        if (char.IsLetter(i_Str[i]))
-            //        {
-            //            isChar = true;
-            //        }
-            //        else
-            //            if (char.IsDigit(i_Str[i]))
-            //        {
-            //            isNumber = true;
-            //        }
-            //        else
-            //            isSign = true;
-            //    }
-            //    if (((isChar == true) && (isNumber == true)) || (isSign == true))
-            //    {
-            //        return false;
-            //    }
             }
             return answer;
         }

@@ -9,7 +9,7 @@ namespace B20_Ex01_01
     {
         public static void Main()
         {
-            
+
             BinarySeries();
             Console.WriteLine("Please press 'ENTER' to exit...");
             Console.ReadLine();
@@ -20,7 +20,7 @@ namespace B20_Ex01_01
         {
             string binaryNumber = Console.ReadLine();
             bool ifBinary = true;
-            while ((InputBinaryChack(binaryNumber) == !ifBinary || (ChackIfNumBase2(binaryNumber)==!ifBinary)))
+            while ((InputBinaryChack(binaryNumber) == !ifBinary || (ChackIfNumBase2(binaryNumber) == !ifBinary)))
             {
                 Console.WriteLine("Error! wrong input {0}Please try again:", Environment.NewLine);
                 binaryNumber = Console.ReadLine();
@@ -96,7 +96,7 @@ Avg of 1 digits is: {1} ",
         }
 
         private static void CountPowOfTwo(string i_userInput, ref int io_countPowOfTwo)
-        {     
+        {
             int decNum = ConvertBinNumToDecNum(i_userInput);
             double powOfTwo = Math.Log(decNum, 2);
             int powOfTwoInt = Convert.ToInt16(powOfTwo);
@@ -105,7 +105,7 @@ Avg of 1 digits is: {1} ",
             {
                 io_countPowOfTwo++;
             }
-            
+
         }
 
         private static void CountOfNumbersInAscendingOrder(string i_userInput, ref int io_counterOfNumbers)
@@ -128,8 +128,8 @@ Avg of 1 digits is: {1} ",
 
         private static string MaxAndMin(string i_userInput1, string i_userInput2, string i_userInput3)
         {
-            int decNumber1 = ConvertBinNumToDecNum(i_userInput1); 
-            int decNumber2 = ConvertBinNumToDecNum(i_userInput2); 
+            int decNumber1 = ConvertBinNumToDecNum(i_userInput1);
+            int decNumber2 = ConvertBinNumToDecNum(i_userInput2);
             int decNumber3 = ConvertBinNumToDecNum(i_userInput3);
             int max = decNumber1;
             int min;
@@ -188,21 +188,21 @@ The {4} in dec Is : {5}",
 
             Console.WriteLine("Please enter 3 binary numbers with 9 digits each:");
 
-            string userInput1= GetInputFromUser(); 
-            string userInput2= GetInputFromUser(); 
-            string userInput3= GetInputFromUser();
+            string userInput1 = GetInputFromUser();
+            string userInput2 = GetInputFromUser();
+            string userInput3 = GetInputFromUser();
             int countOfTwo = 0;
             int counterOforderNum = 0;
 
-            CountOfDigits(userInput1,ref countOfzero,ref countOfOne);
+            CountOfDigits(userInput1, ref countOfzero, ref countOfOne);
             CountOfDigits(userInput2, ref countOfzero, ref countOfOne);
             CountOfDigits(userInput3, ref countOfzero, ref countOfOne);
 
-            CountPowOfTwo(userInput1,ref countOfTwo);
+            CountPowOfTwo(userInput1, ref countOfTwo);
             CountPowOfTwo(userInput2, ref countOfTwo);
             CountPowOfTwo(userInput3, ref countOfTwo);
 
-            CountOfNumbersInAscendingOrder(userInput1,ref counterOforderNum);
+            CountOfNumbersInAscendingOrder(userInput1, ref counterOforderNum);
             CountOfNumbersInAscendingOrder(userInput2, ref counterOforderNum);
             CountOfNumbersInAscendingOrder(userInput3, ref counterOforderNum);
 
@@ -219,7 +219,7 @@ The count of Series is: {3}"
             AvgOfDigits(countOfzero, countOfOne),
             countOfTwo,
             counterOforderNum,
-            MaxAndMin(userInput1,userInput2,userInput3)
+            MaxAndMin(userInput1, userInput2, userInput3)
             );
 
             Console.WriteLine(msg);
@@ -228,6 +228,3 @@ The count of Series is: {3}"
 
 
 }
-
-
-
