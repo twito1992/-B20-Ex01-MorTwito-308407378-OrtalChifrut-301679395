@@ -8,7 +8,7 @@ namespace B20_Ex01_02
     {
         public class Program
         {
-            private const char Asterisk = '*';    //?אם זה מתשנה קבוע, צריך לכתוב את זה לפני המשתנה?
+            private const char Asterisk = '*';    
             private const char Space = ' ';
 
             public static void Main()
