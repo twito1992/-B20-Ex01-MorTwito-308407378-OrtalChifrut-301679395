@@ -6,105 +6,108 @@ namespace B20_Ex01_05
     {
         public static void Main ()
         {
-            numberStatistics();
+            NumberStatistics();
             Console.WriteLine("Please press 'ENTER' to exit...");
             Console.ReadLine();
         }
 
-        private static int getTheBigestDig(int i_userNumber)
+        private static int GetTheBigestDig(int i_UserNumber)
         {
             int bigDig = 0;
 
-            while (i_userNumber > 0)
+            while (i_UserNumber > 0)
             {
-                if (bigDig < i_userNumber % 10)
+                if (bigDig < i_UserNumber % 10)
                 {
-                    bigDig = i_userNumber % 10;
+                    bigDig = i_UserNumber % 10;
                 }
-                i_userNumber = i_userNumber / 10;
+                i_UserNumber = i_UserNumber / 10;
             }
             return bigDig;
         }
 
-        private static int getThelowestDig(int i_userNumber)
+        private static int GetThelowestDig(int i_UserNumber)
         {
             int smallestDig = 10;
 
-            while (i_userNumber > 0)
+            while (i_UserNumber > 0)
             {
-                if (smallestDig > i_userNumber % 10)
+                if (smallestDig > i_UserNumber % 10)
                 {
-                    smallestDig = i_userNumber % 10;
+                    smallestDig = i_UserNumber % 10;
                 }
-                i_userNumber = i_userNumber / 10;
+                i_UserNumber = i_UserNumber / 10;
             }
             return smallestDig;
         }
 
-        private static int getTheCountOfDigDivBy3(int i_userNumber)
+        private static int GetTheCountOfDigDivBy3(int i_UserNumber)
         {
             int countDivBy3 = 0;
 
-            while (i_userNumber > 0)
+            while (i_UserNumber > 0)
             {
-                if (i_userNumber % 10 % 3 == 0)
+                if (i_UserNumber % 10 % 3 == 0)
                 {
                     countDivBy3++;
                 }
-                i_userNumber = i_userNumber / 10;
+                i_UserNumber = i_UserNumber / 10;
             }
             return countDivBy3;
         }
-        private static int getTheCountOfDigitUpperThenUnityDigit(int i_userNumber)
+        private static int GetTheCountOfDigitUpperThenUnityDigit(int i_UserNumber)
         {
             int countOfDigitUpperThenUnityDigit = 0;
-            int unityDigit = i_userNumber % 10;
+            int unityDigit = i_UserNumber % 10;
 
-            i_userNumber = i_userNumber / 10;
-            while (i_userNumber > 0)
+            i_UserNumber = i_UserNumber / 10;
+            while (i_UserNumber > 0)
             {
-                if (unityDigit < i_userNumber % 10)
+                if (unityDigit < i_UserNumber % 10)
                 {
                     countOfDigitUpperThenUnityDigit++;
                 }
-                i_userNumber = i_userNumber / 10;
+                i_UserNumber = i_UserNumber / 10;
             }
             return countOfDigitUpperThenUnityDigit;
         }
-        private static bool checkIfValidInputFromUser(string i_userInput)
+        private static bool CheckIfValidInputFromUser(string i_UserInput)
         {
             bool checkIfItsANumber = false;
 
-            if (i_userInput.Length != 9)
+            if (i_UserInput.Length != 9)
             {
                 return checkIfItsANumber;
             }
 
             int userNumber = 0;
+            bool answer = true;
 
-            checkIfItsANumber = int.TryParse(i_userInput, out userNumber);
+            checkIfItsANumber = int.TryParse(i_UserInput, out userNumber);
             if ((checkIfItsANumber == false) || (userNumber < 0))
             {
-                return false;
+                answer = false;
             }
-            return true;
+            return answer;
           }
-        private static string getInputFromUser()
-        {           
+        private static string GetInputFromUser()
+        {
+            bool fleg = true;
+
             Console.WriteLine("Plase enter 9-digits positiv number:");
 
             string userInput= Console.ReadLine();
 
-            while (checkIfValidInputFromUser(userInput) == false)
+            while (CheckIfValidInputFromUser(userInput) == !fleg)
             {
                 Console.WriteLine("Error!\nInvalid input (Can be only positive numbers and the size must be 9)\n----------------------------------\nPlease try again:");
                 userInput = Console.ReadLine();
             }
             return userInput;
         }
-        private static void numberStatistics()
+        private static void NumberStatistics()
         {
-            string userInput = getInputFromUser();
+            string userInput = GetInputFromUser();
             int userNumber = int.Parse(userInput);
             string msg = string.Format(
 @"------------------Number Statistics--------------
@@ -114,10 +117,10 @@ The smallest digit is : {2}
 The number of digit divided by 3 is : {3}
 The number of digit bigger then unit digit is : {4} ",
             userNumber,
-            getTheBigestDig(userNumber),
-            getThelowestDig(userNumber),
-            getTheCountOfDigDivBy3(userNumber),
-            getTheCountOfDigitUpperThenUnityDigit(userNumber));
+            GetTheBigestDig(userNumber),
+            GetThelowestDig(userNumber),
+            GetTheCountOfDigDivBy3(userNumber),
+            GetTheCountOfDigitUpperThenUnityDigit(userNumber));
 
             Console.WriteLine(msg);
         }
