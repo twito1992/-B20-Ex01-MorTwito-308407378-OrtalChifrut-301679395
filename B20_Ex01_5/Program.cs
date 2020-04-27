@@ -4,7 +4,7 @@ namespace B20_Ex01_05
 {
     public class B20_Ex01_05
     {
-        public static void Main ()
+        public static void Main()
         {
             NumberStatistics();
             Console.WriteLine("Please press 'ENTER' to exit...");
@@ -89,14 +89,14 @@ namespace B20_Ex01_05
                 answer = false;
             }
             return answer;
-          }
+        }
         private static string GetInputFromUser()
         {
             bool fleg = true;
 
             Console.WriteLine("Plase enter 9-digits positiv number:");
 
-            string userInput= Console.ReadLine();
+            string userInput = Console.ReadLine();
 
             while (CheckIfValidInputFromUser(userInput) == !fleg)
             {
@@ -127,5 +127,3 @@ The number of digit bigger then unit digit is : {4} ",
 
     }
 }
-
-
